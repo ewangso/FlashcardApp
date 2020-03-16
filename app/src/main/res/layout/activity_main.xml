@@ -24,8 +24,8 @@
 
     <TextView
         android:id="@+id/answer"
-        android:layout_width="143dp"
-        android:layout_height="103dp"
+        android:layout_width="375dp"
+        android:layout_height="114dp"
         android:gravity="center"
         android:text="Mexico"
         android:textSize="40sp"

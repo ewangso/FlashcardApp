@@ -94,16 +94,19 @@ public class MainActivity extends AppCompatActivity {
         delete_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                allFlashcards.remove(currentCardDisplayedIndex);
-                flashcardDatabase.deleteCard(allFlashcards.get(currentCardDisplayedIndex).getQuestion());
                 if(allFlashcards != null && allFlashcards.size() > 0) {
+                    flashcardDatabase.deleteCard(allFlashcards.get(currentCardDisplayedIndex).getQuestion());
+                    allFlashcards.remove(currentCardDisplayedIndex);
+                }
 
-                    question.setText(allFlashcards.get(currentCardDisplayedIndex).getQuestion());
-                    answer.setText(allFlashcards.get(currentCardDisplayedIndex).getAnswer());
+                if(allFlashcards != null && allFlashcards.size() > 0) {
+                    question.setText(allFlashcards.get(currentCardDisplayedIndex - 1).getQuestion());
+                    answer.setText(allFlashcards.get(currentCardDisplayedIndex - 1).getAnswer());
                 } else{
                     question.setText(" ");
                     answer.setText(" ");
                 }
+
             }
         });
 
