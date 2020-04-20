@@ -1,11 +1,11 @@
 📝 `NOTE` Paste this template at the top of your existing `README.md` file from the last lab.
 
-## Lab 3
+## Flashcard App
 
 ### App Description
 I added a way to save Flashcard data into a database and also created a delete function to delete flashcards from database memory.
 
-### App Walk-though
+### App Walk-through
 <img src="https://i.imgur.com/vuwwrUH.gif" width=200><br>
 
 
